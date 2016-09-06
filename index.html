@@ -2,6 +2,9 @@
 <html>
     <head>
         <title>App</title>
+        
+        <!-- Need this for Android with Crosswalk -->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
         <meta http-equiv="Content-Security-Policy" 
                  content="default-src *; 
@@ -12,12 +15,13 @@
 
         <script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
 
+        <script type="text/javascript" src="connection.js"></script>
         <script type="text/javascript" src="init.js"></script>
 
 
     </head>
     <body>
-        <div id="online" data-iframe="http://www.worldview.com.br">
+        <div id="online" data-iframe="http://www.worldview.com.br/?appp=2">
             <!-- the iframe is dynamically created here after we check offline/online connection -->
         </div>
         <div id="offline-footer">
@@ -33,4 +37,4 @@
             } );
         </script>
     </body>
-</html>
+</html>0
